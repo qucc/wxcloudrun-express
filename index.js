@@ -35,7 +35,6 @@ app.post("/api/count", async (req, res) => {
 
 // 获取计数
 app.get("/api/count", async (req, res) => {
-  logger.info('aaaa')
   console.log('bbbb')
   const result = await Counter.count();
   res.send({
